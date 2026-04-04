@@ -1,0 +1,40 @@
+name: Fetch Daily Reports
+
+on:
+  schedule:
+    # Run daily at 06:00 UTC (09:00 Israel time)
+    - cron: '0 6 * * *'
+  workflow_dispatch: # Allow manual trigger
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Fetch reports from Gmail
+        env:
+          GMAIL_USER: ${{ secrets.GMAIL_USER }}
+          GMAIL_APP_PASS: ${{ secrets.GMAIL_APP_PASS }}
+          GMAIL_LABEL: TulipReports
+        run: python scripts/fetch_gmail_reports.py
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "Dashboard Bot"
+          git config user.email "bot@tulip-dashboard.local"
+          git add data/live/
+          if git diff --staged --quiet; then
+            echo "No new data to commit"
+          else
+            git commit -m "Auto-update: daily report data $(date +%Y-%m-%d)"
+            git push
+          fi

@@ -1,0 +1,15 @@
+[google_ads]
+required = ["date", "campaign_name", "ad_group", "impressions", "clicks", "cost", "conversions", "ctr"]
+optional = ["cost_per_conversion", "avg_cpc", "device", "interactions", "search_impression_share"]
+
+[meta_ads]
+required = ["date", "campaign_name", "impressions", "link_clicks", "spend", "cpc", "ctr"]
+optional = ["ad_set_name", "reach", "frequency", "unique_link_clicks", "platform"]
+
+[ga4]
+required = ["date", "session_source_medium", "sessions", "engaged_sessions", "engagement_rate"]
+optional = ["avg_engagement_time_seconds", "key_events", "key_event_rate", "events_per_session", "total_revenue"]
+
+[social_organic]
+required = ["date", "platform", "followers", "impressions", "engagements", "engagement_rate"]
+optional = ["new_followers", "posts", "reach", "link_clicks", "profile_visits"]
