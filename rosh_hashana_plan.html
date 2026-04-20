@@ -1,0 +1,517 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>תוכנית ראש השנה 2026 · יקב טוליפ</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Heebo',Arial,sans-serif;background:#f0f2f5;color:#222;direction:rtl;padding:24px;line-height:1.55}
+.wrap{max-width:1280px;margin:0 auto}
+.hero{background:linear-gradient(135deg,#1a3c5e,#2e6da4);color:#fff;border-radius:16px;padding:36px 40px;margin-bottom:24px;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;inset:auto -40px -60px auto;width:280px;height:280px;background:radial-gradient(circle,#ff8c00 0%,transparent 70%);opacity:.35}
+.hero h1{font-size:2rem;font-weight:800;margin-bottom:8px}
+.hero .sub{font-size:1rem;opacity:.9;margin-bottom:18px}
+.hero .pills{display:flex;gap:10px;flex-wrap:wrap}
+.pill{background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.25);padding:7px 14px;border-radius:20px;font-size:.88rem;font-weight:600}
+.pill.orange{background:#ff8c00;border-color:#ff8c00}
+.section{background:#fff;border-radius:14px;padding:26px 28px;box-shadow:0 2px 10px rgba(0,0,0,.07);margin-bottom:20px}
+.section h2{font-size:1.3rem;font-weight:800;color:#1a3c5e;margin-bottom:6px;padding-bottom:10px;border-bottom:3px solid #e8f0fe;display:flex;align-items:center;gap:10px}
+.section h2 .num{background:#1a3c5e;color:#fff;width:32px;height:32px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:.95rem;font-weight:700}
+.section .lead{font-size:.95rem;color:#555;margin:12px 0 18px}
+.kpi-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:6px}
+.kpi{background:#fff;border-radius:12px;padding:20px 18px;text-align:center;border-top:4px solid;box-shadow:0 2px 10px rgba(0,0,0,.07)}
+.kpi.b{border-color:#4285f4}.kpi.r{border-color:#ea4335}.kpi.y{border-color:#f4b400}.kpi.g{border-color:#34a853}.kpi.p{border-color:#9c27b0}.kpi.o{border-color:#ff8c00}
+.klabel{font-size:.82rem;color:#666;font-weight:600;margin-bottom:8px}
+.kval{font-size:1.9rem;font-weight:800}
+.kpi.b .kval{color:#4285f4}.kpi.r .kval{color:#ea4335}.kpi.y .kval{color:#f4b400}.kpi.g .kval{color:#34a853}.kpi.p .kval{color:#9c27b0}.kpi.o .kval{color:#ff8c00}
+.ksub{font-size:.78rem;color:#999;margin-top:4px}
+table{width:100%;border-collapse:collapse;font-size:.93rem}
+th{background:#f0f4ff;color:#1a3c5e;font-weight:700;padding:11px 12px;text-align:right;border-bottom:2px solid #d9e4f5}
+td{padding:11px 12px;border-bottom:1px solid #f0f2f5;text-align:right}
+tr:last-child td{border-bottom:none}
+tr.tot td{background:#f8f9ff;font-weight:700;color:#1a3c5e}
+.good{color:#34a853;font-weight:700}
+.mid{color:#f4b400;font-weight:700}
+.bad{color:#ea4335;font-weight:700}
+.tag{display:inline-block;padding:3px 10px;border-radius:10px;font-size:.78rem;font-weight:600}
+.tag.g{background:#e6f4ea;color:#1e7e34}
+.tag.y{background:#fff8e1;color:#a37500}
+.tag.r{background:#fde8e7;color:#b42318}
+.tag.b{background:#e8f0fe;color:#1a3c5e}
+.tag.o{background:#fff3e0;color:#b45309}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.three-col{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.bar-row{display:flex;align-items:center;gap:12px;margin-bottom:10px;font-size:.9rem}
+.bar-label{width:220px;font-weight:600;color:#333}
+.bar-bg{flex:1;background:#e8f0fe;border-radius:6px;height:22px;overflow:hidden;position:relative}
+.bar-fill{height:100%;border-radius:6px;display:flex;align-items:center;justify-content:flex-end;padding:0 8px;color:#fff;font-size:.8rem;font-weight:700}
+.bar-val{width:100px;font-weight:700;color:#1a3c5e;text-align:left}
+.flow{display:grid;grid-template-columns:repeat(7,1fr);gap:8px;margin-top:10px}
+.flow-step{background:#f8f9ff;border-radius:10px;padding:12px 10px;border-right:4px solid #4285f4;font-size:.82rem;position:relative}
+.flow-step .fn{font-size:1.4rem;font-weight:800;color:#4285f4;display:block;margin-bottom:4px}
+.flow-step .ft{font-weight:700;color:#1a3c5e;margin-bottom:4px}
+.flow-step .fd{color:#666;font-size:.76rem;line-height:1.4}
+.flow-arrow{position:absolute;left:-12px;top:50%;transform:translateY(-50%);color:#4285f4;font-weight:800;font-size:1.2rem;z-index:2}
+.grid-2col{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:10px}
+.box{background:#f8f9ff;border-radius:10px;padding:16px;border-right:4px solid #1a3c5e}
+.box.y{border-color:#f4b400;background:#fffaeb}
+.box.g{border-color:#34a853;background:#f0f9f4}
+.box.r{border-color:#ea4335;background:#fef2f2}
+.box.o{border-color:#ff8c00;background:#fff7ed}
+.box.p{border-color:#9c27b0;background:#faf5ff}
+.box h3{font-size:1rem;font-weight:700;color:#1a3c5e;margin-bottom:6px}
+.box p{font-size:.88rem;color:#555;line-height:1.55}
+ul.ticks{list-style:none;padding:0}
+ul.ticks li{padding:6px 0 6px 0;font-size:.9rem;color:#333;position:relative;padding-right:26px;line-height:1.6}
+ul.ticks li::before{content:"✓";position:absolute;right:0;top:6px;color:#34a853;font-weight:800}
+ul.crosses li::before{content:"✗";color:#ea4335}
+ul.dots li::before{content:"•";color:#1a3c5e}
+.gantt{overflow-x:auto;border-radius:10px;background:#fafbff;padding:14px;border:1px solid #e8f0fe}
+.gantt-table{min-width:1000px;border-collapse:separate;border-spacing:0}
+.gantt-table th,.gantt-table td{padding:6px 8px;font-size:.78rem;text-align:center;border-bottom:1px solid #eef2f9}
+.gantt-table th:first-child,.gantt-table td:first-child{text-align:right;min-width:260px;font-weight:600;background:#fff;position:sticky;right:0;z-index:1}
+.gantt-table th{background:#f0f4ff;color:#1a3c5e;font-weight:700;position:sticky;top:0;z-index:2}
+.gb{display:inline-block;width:100%;height:16px;border-radius:4px}
+.gb.w{background:#4285f4}
+.gb.b{background:#34a853}
+.gb.s{background:#ff8c00}
+.gb.m{background:#9c27b0}
+.gb.c{background:#ea4335}
+.decision{background:#fffaeb;border:1.5px solid #f4b400;border-radius:12px;padding:16px 20px;margin-bottom:12px}
+.decision h3{font-size:1rem;font-weight:800;color:#a37500;margin-bottom:6px}
+.decision p{font-size:.9rem;color:#555;margin-bottom:10px}
+.decision .opts{display:flex;gap:10px;flex-wrap:wrap}
+.decision .opts span{background:#fff;border:1px solid #e8dba8;padding:6px 14px;border-radius:20px;font-size:.85rem;font-weight:600;color:#444}
+.legend{display:flex;gap:16px;flex-wrap:wrap;margin-top:10px;font-size:.82rem;color:#555}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.legend span::before{content:"";width:14px;height:14px;border-radius:3px;display:inline-block}
+.legend .lg-w::before{background:#4285f4}
+.legend .lg-b::before{background:#34a853}
+.legend .lg-s::before{background:#ff8c00}
+.legend .lg-m::before{background:#9c27b0}
+.legend .lg-c::before{background:#ea4335}
+.note{font-size:.8rem;color:#888;margin-top:10px;font-style:italic}
+.footer{text-align:center;font-size:.82rem;color:#888;margin-top:30px;padding:20px}
+.footer a{color:#4285f4;text-decoration:none;font-weight:600}
+.stat-inline{display:flex;gap:20px;flex-wrap:wrap;margin-top:10px}
+.stat-inline div{background:#f8f9ff;padding:10px 14px;border-radius:10px;font-size:.88rem}
+.stat-inline strong{color:#1a3c5e;font-size:1rem}
+@media (max-width:900px){
+  body{padding:12px}
+  .kpi-grid{grid-template-columns:repeat(2,1fr)}
+  .two-col,.three-col{grid-template-columns:1fr}
+  .flow{grid-template-columns:repeat(2,1fr)}
+  .hero h1{font-size:1.4rem}
+  .bar-label{width:150px;font-size:.8rem}
+}
+@media print{
+  body{background:#fff;padding:0}
+  .section{box-shadow:none;page-break-inside:avoid}
+  .hero{page-break-after:avoid}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<!-- HERO -->
+<div class="hero">
+  <h1>תוכנית ראש השנה 2026 · יעד 2 מיליון שקלים</h1>
+  <div class="sub">יקב טוליפ בע״מ · מסמך הנהלה · הצגה לשמחה וצוות המכירות</div>
+  <div class="pills">
+    <span class="pill orange">דדליין חג: 13 ספטמבר 2026</span>
+    <span class="pill">baseline פסח 2026: ₪1.39M</span>
+    <span class="pill">פער ליעד: ₪606K (+44%)</span>
+    <span class="pill">הכנה מתחילה: מאי 2026</span>
+  </div>
+</div>
+
+<!-- 1. תקציר מנהלים -->
+<div class="section">
+  <h2><span class="num">1</span>תקציר מנהלים</h2>
+  <p class="lead">הביצועים של פסח 2026 היו בריאים ומעל ממוצעי השוק. כדי להגיע ליעד ₪2M בראש השנה, נדרשת חשיבה שונה: זה לא עניין של להעלות תקציב מדיה ב-40%, אלא לבנות יחידה עסקית משולבת של יקב (ייצור, לוגיסטיקה) ובק-אופיס (מדיה, מכירות, אוטומציה) שעובדים במקביל ולא ברצף.</p>
+  <div class="kpi-grid">
+    <div class="kpi b">
+      <div class="klabel">יעד הכנסה</div>
+      <div class="kval">₪2M</div>
+      <div class="ksub">ראש השנה 2026</div>
+    </div>
+    <div class="kpi o">
+      <div class="klabel">הפער שצריך לסגור</div>
+      <div class="kval">₪606K</div>
+      <div class="ksub">+44% מעל פסח</div>
+    </div>
+    <div class="kpi g">
+      <div class="klabel">מצב מדיה נוכחי</div>
+      <div class="kval">בריא</div>
+      <div class="ksub">החזר פי 5.8 על המדיה</div>
+    </div>
+    <div class="kpi p">
+      <div class="klabel">פעילות חדשה</div>
+      <div class="kval">בק-אופיס</div>
+      <div class="ksub">מערכת אוטומטית 7 שלבים</div>
+    </div>
+  </div>
+  <div class="stat-inline">
+    <div>3 מוקדים אסטרטגיים: <strong>העלאת עסקה ממוצעת</strong> · <strong>שיפור אחוז סגירה</strong> · <strong>ציד עסקאות גדולות</strong></div>
+  </div>
+</div>
+
+<!-- 2. מצב נוכחי -->
+<div class="section">
+  <h2><span class="num">2</span>מצב נוכחי · baseline פסח 2026</h2>
+  <p class="lead">221 לקוחות שילמו בפסח 2026 עבור 19,506 מארזים, סך הכל ₪1,393,445. הנתונים מעידים על יסוד לקוחות רחב אבל עסקה ממוצעת צנועה ביחס לפוטנציאל.</p>
+  <div class="kpi-grid">
+    <div class="kpi b"><div class="klabel">לקוחות משלמים</div><div class="kval">211</div><div class="ksub">מתוך 221 (10 שילמו ₪0)</div></div>
+    <div class="kpi g"><div class="klabel">סה״כ מארזים</div><div class="kval">19,506</div><div class="ksub">ממוצע 82 ללקוח</div></div>
+    <div class="kpi y"><div class="klabel">עסקה ממוצעת</div><div class="kval">₪6,604</div><div class="ksub">מחיר ממוצע ₪80.6 למארז</div></div>
+    <div class="kpi r"><div class="klabel">סה״כ הכנסות</div><div class="kval">₪1.39M</div><div class="ksub">חג אחד, 3.5 חודשים</div></div>
+  </div>
+  <h3 style="font-size:1rem;font-weight:700;color:#1a3c5e;margin:22px 0 10px">ביצועי המדיה · Google Ads + Meta</h3>
+  <div class="kpi-grid">
+    <div class="kpi b"><div class="klabel">עלות לליד</div><div class="kval">₪138</div><div class="ksub">164 לידים · ₪22,687 סה״כ מדיה</div></div>
+    <div class="kpi g"><div class="klabel">אחוז סגירה מליד</div><div class="kval">12.2%</div><div class="ksub">20 עסקאות מ-164 לידים</div></div>
+    <div class="kpi o"><div class="klabel">עלות גיוס לקוח</div><div class="kval">₪1,134</div><div class="ksub">מדיה בלבד, ללא עבודת סגירה</div></div>
+    <div class="kpi p"><div class="klabel">החזר על המדיה</div><div class="kval">פי 5.8</div><div class="ksub">₪131K מ-17 לקוחות מזוהים</div></div>
+  </div>
+  <p class="note">הערה: ההחזר פי 5.8 הוא <strong>לא אינקרמנטלי</strong>. חלק מהעסקאות היו נסגרות גם בלי מדיה (לקוחות חוזרים, חיפוש ישיר). ההחזר האינקרמנטלי האמיתי ייודע רק כשיהיה תיוג מלא ב-CRM ו-Offline Conversion Import.</p>
+</div>
+
+<!-- 3. השוואה לשוק -->
+<div class="section">
+  <h2><span class="num">3</span>איפה אנחנו ביחס לשוק הישראלי</h2>
+  <p class="lead">השוואה למדדי ייחוס בתחום המארזים העסקיים והפרסום הדיגיטלי בישראל:</p>
+  <table>
+    <thead>
+      <tr><th>מדד</th><th>הנתון שלנו</th><th>ממוצע שוק</th><th>הערכה</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>עלות לליד</td><td>₪138</td><td>₪100–₪300</td><td><span class="tag g">טוב, בטווח הנמוך</span></td></tr>
+      <tr><td>אחוז סגירה מליד</td><td>12.2%</td><td>5%–10% רגיל · 12%–15% מצוין</td><td><span class="tag g">מעל הממוצע</span></td></tr>
+      <tr><td>עלות גיוס לקוח</td><td>₪1,134</td><td>₪800–₪2,500</td><td><span class="tag g">טוב</span></td></tr>
+      <tr><td>החזר על המדיה</td><td>פי 5.8</td><td>פי 3–4 סביר · פי 5–7 חזק</td><td><span class="tag g">חזק</span></td></tr>
+      <tr><td>עסקה ממוצעת</td><td>₪6,604</td><td>₪3,000–₪15,000</td><td><span class="tag y">אמצע הטווח, יש פוטנציאל</span></td></tr>
+      <tr><td>ממוצע מארזים ללקוח</td><td>82</td><td>תלוי גודל חברה</td><td><span class="tag b">מעיד על SMB + בינוני</span></td></tr>
+    </tbody>
+  </table>
+  <p class="note">שורה תחתונה: המיקום מעל הממוצע, לא יוצא דופן. האתגר בראש השנה הוא לשמור על רמת הביצועים הזאת כשהתקציב גדל פי שניים. בהגדלה כמעט תמיד ההחזר יורד — צפו לפי 2.5 עד 4 על התוספת, לא פי 5.8.</p>
+</div>
+
+<!-- 4. פירוק ₪2M למקורות -->
+<div class="section">
+  <h2><span class="num">4</span>איך מגיעים ל-₪2M · פירוק מקורות הכנסה</h2>
+  <p class="lead">היעד מפורק ל-5 זרמי הכנסה. כל זרם דורש פעולה שונה ומנגנון מדידה נפרד:</p>
+
+  <div class="bar-row">
+    <div class="bar-label">לקוחות חוזרים · 45%</div>
+    <div class="bar-bg"><div class="bar-fill" style="width:45%;background:#4285f4">שימור 60% × AOV +10%</div></div>
+    <div class="bar-val">₪900K</div>
+  </div>
+  <div class="bar-row">
+    <div class="bar-label">ערוץ חדש · בק-אופיס + LinkedIn · 18%</div>
+    <div class="bar-bg"><div class="bar-fill" style="width:18%;background:#9c27b0">מערכת אוטומטית</div></div>
+    <div class="bar-val">₪366K</div>
+  </div>
+  <div class="bar-row">
+    <div class="bar-label">ישיר · אורגני · SEO · 14%</div>
+    <div class="bar-bg"><div class="bar-fill" style="width:14%;background:#34a853">חזרה לאתר</div></div>
+    <div class="bar-val">₪270K</div>
+  </div>
+  <div class="bar-row">
+    <div class="bar-label">חדשים ממדיה בתשלום · 13%</div>
+    <div class="bar-bg"><div class="bar-fill" style="width:13%;background:#f4b400">כפול תקציב</div></div>
+    <div class="bar-val">₪264K</div>
+  </div>
+  <div class="bar-row">
+    <div class="bar-label">פה-לאוזן · הפניות · שותפויות · 10%</div>
+    <div class="bar-bg"><div class="bar-fill" style="width:10%;background:#ff8c00">תוכנית הפניה חדשה</div></div>
+    <div class="bar-val">₪200K</div>
+  </div>
+
+  <table style="margin-top:20px">
+    <thead>
+      <tr><th>זרם</th><th>יעד ₪</th><th>הנחות מפתח</th><th>בעלות</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>לקוחות חוזרים</td><td>₪900K</td><td>120 חוזרים מ-221, AOV ₪7,500</td><td><span class="tag b">יקב + בק-אופיס</span></td></tr>
+      <tr><td>ערוץ חדש בק-אופיס</td><td>₪366K</td><td>15 עסקאות חדשות midmarket</td><td><span class="tag b">בק-אופיס</span></td></tr>
+      <tr><td>ישיר · אורגני</td><td>₪270K</td><td>שיפור SEO + חזרה אורגנית</td><td><span class="tag b">בק-אופיס</span></td></tr>
+      <tr><td>מדיה בתשלום</td><td>₪264K</td><td>₪95–110K מדיה · 40 עסקאות</td><td><span class="tag b">בק-אופיס</span></td></tr>
+      <tr><td>הפניות + שותפויות</td><td>₪200K</td><td>תמריץ ₪200 למפנה · הרחבת WeWork</td><td><span class="tag b">יקב + בק-אופיס</span></td></tr>
+      <tr class="tot"><td>סה״כ</td><td>₪2,000,000</td><td>+44% מ-baseline פסח</td><td>—</td></tr>
+    </tbody>
+  </table>
+  <p class="note">זה לא יעד של אחד — זו תוכנית של 5 זרמים מקבילים. אם אחד תת-ביצוע (למשל המדיה לא מניבה פי 3), זרמים אחרים יכולים לפצות.</p>
+</div>
+
+<!-- 5. המערכת האוטומטית -->
+<div class="section">
+  <h2><span class="num">5</span>ערוץ חדש · מערכת בק-אופיס אוטומטית</h2>
+  <p class="lead">המערכת עוזרת לצוות הפרונטלי של טוליפ להפסיק לבזבז זמן על חיפוש ופרוספקטינג, ולעבור להתמקד בסגירות בלבד. הכל קורה עם פיקוח של פרזי, בצורה מדודה ובטוחה.</p>
+
+  <div class="flow">
+    <div class="flow-step"><span class="fn">1</span><div class="ft">איסוף לידים</div><div class="fd">מאגרי חברות ישראליים, LinkedIn, מפת הלקוחות הקיימת של טוליפ</div></div>
+    <div class="flow-step"><span class="fn">2</span><div class="ft">העשרה</div><div class="fd">איש קשר HR או רווחה, טלפון, גודל חברה, סימנים של תקציב חגים</div></div>
+    <div class="flow-step"><span class="fn">3</span><div class="ft">ניקוד</div><div class="fd">סוכן בינה מלאכותית נותן ציון 1–100 לפי התאמה לפרופיל לקוח</div></div>
+    <div class="flow-step"><span class="fn">4</span><div class="ft">חיבור LinkedIn</div><div class="fd">בקשת חיבור עם הודעה מותאמת אישית לפי הסגמנט</div></div>
+    <div class="flow-step"><span class="fn">5</span><div class="ft">שלושה מגעים</div><div class="fd">הודעה + אימייל, יום 0, יום 3, יום 7. תסריט מבוסס ערך</div></div>
+    <div class="flow-step"><span class="fn">6</span><div class="ft">טלפון</div><div class="fd">חיפוש טלפון אחרי 10 ימים ללא תגובה, העברה לצוות מכירות</div></div>
+    <div class="flow-step"><span class="fn">7</span><div class="ft">תיאום פגישה</div><div class="fd">יומן משולב, כל פגישה שנקבעת נכנסת ל-CRM אוטומטית</div></div>
+  </div>
+
+  <div class="grid-2col" style="margin-top:22px">
+    <div class="box g">
+      <h3>מה זה חוסך לצוות</h3>
+      <ul class="ticks">
+        <li>הפסקת בזבוז 70% מהזמן על מציאת לקוחות פוטנציאליים</li>
+        <li>מגיעים לשיחה רק עם לקוחות שכבר מחוברים בלינקדאין, פתחו אימייל, והראו עניין</li>
+        <li>כל פגישה שמגיעה לצוות — הליד כבר "חם"</li>
+        <li>סגירה במקום ציד — הצוות עושה את מה שהוא הכי טוב בו</li>
+      </ul>
+    </div>
+    <div class="box y">
+      <h3>מה צריך לבנות</h3>
+      <ul class="dots">
+        <li>מנויי כלים: LinkedIn Sales Navigator, Apollo או Lusha לטלפונים, Make או n8n לאוטומציה</li>
+        <li>תסריטים לשלוש סגמנטים: חברות קטנות, בינוניות, גדולות</li>
+        <li>CRM תקין עם תיוגים: מקור ליד, סטטוס, ציון</li>
+        <li>פיקוח אנושי של פרזי — אישור batches של 10–20 בקשות ביום</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="stat-inline" style="margin-top:18px">
+    <div>תקציב בנייה חד-פעמי: <strong>₪15K–25K</strong></div>
+    <div>תפעול חודשי (כלים): <strong>₪1,500–2,500</strong></div>
+    <div>יעד מהמערכת לחג: <strong>15 עסקאות midmarket = ₪366K</strong></div>
+    <div>פיילוט ראשון: <strong>30 יום · יולי 2026</strong></div>
+  </div>
+</div>
+
+<!-- 6. שלושה מוקדי שיפור -->
+<div class="section">
+  <h2><span class="num">6</span>שלושה מוקדי שיפור · איפה לשים את הלב</h2>
+  <div class="three-col">
+    <div class="box b">
+      <h3>העלאת עסקה ממוצעת</h3>
+      <p><strong>היום: ₪6,604 · יעד: ₪8,000 (+20%)</strong></p>
+      <ul class="dots" style="margin-top:8px">
+        <li>minimum order ₪3,000 למעל 30 מארזים</li>
+        <li>bundles ביין פרימיום (tulip reserve)</li>
+        <li>תוספות: ברכות מודפסות, עטיפות, לוגו מוטבע</li>
+        <li>תמריץ הנחה לקפיצת סל של 50+ מארזים</li>
+      </ul>
+    </div>
+    <div class="box g">
+      <h3>העלאת אחוז סגירה</h3>
+      <p><strong>היום: 12.2% · יעד: 15%+</strong></p>
+      <ul class="dots" style="margin-top:8px">
+        <li>תגובה ללידים תוך שעה בשעות העבודה</li>
+        <li>תסריטי מכירה מסודרים לשלוש סגמנטים</li>
+        <li>הטמעת Offline Conversion Import — לבסוף נדע מה עובד באמת</li>
+        <li>A/B על דף נחיתה HR וטופס קצר מול ארוך</li>
+      </ul>
+    </div>
+    <div class="box o">
+      <h3>ציד עסקאות גדולות</h3>
+      <p><strong>היום: 15 עסקאות 200+ מארזים · יעד: 25</strong></p>
+      <ul class="dots" style="margin-top:8px">
+        <li>רשימת target אישית של 200 חברות (ABM)</li>
+        <li>מערכת הבק-אופיס מתמקדת בהן</li>
+        <li>פגישה עם שמחה לכל עסקה 500+ מארזים</li>
+        <li>מחירון לשלושה גדלים עם מבצעים למזמינים מוקדם</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- 7. תשתית שצריך לבנות -->
+<div class="section">
+  <h2><span class="num">7</span>תשתית שצריך לבנות · לפני יולי</h2>
+  <p class="lead">בלי התשתית הזאת, כל תוכנית הסקייל תעבוד עיוור. חמישה פריטים הכרחיים, כל אחד באחריות ברורה:</p>
+  <table>
+    <thead>
+      <tr><th>פריט</th><th>מה זה עושה</th><th>בעלות</th><th>דחיפות</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Offline Conversion Import</td><td>מחבר את שיחות הטלפון שסגרו ל-Google Ads ול-Meta. בלי זה — אין אטריביושן אמיתי.</td><td><span class="tag b">בק-אופיס</span></td><td><span class="tag r">קריטי · מאי</span></td></tr>
+      <tr><td>תיוג CRM מסודר</td><td>חוזר · חדש · ישיר · הפניה · שותפות · בק-אופיס. בלי תיוג — אין הבחנה בין מקורות.</td><td><span class="tag b">יקב + בק-אופיס</span></td><td><span class="tag r">קריטי · מאי</span></td></tr>
+      <tr><td>3 תסריטי מכירה</td><td>סגמנט קטן · בינוני · גדול. תסריט עונה על 80% מההתנגדויות הנפוצות.</td><td><span class="tag b">יקב + בק-אופיס</span></td><td><span class="tag y">גבוה · יוני</span></td></tr>
+      <tr><td>דף נחיתה HR · רווחה</td><td>דף ייעודי לאנשי משאבי אנוש עם ערך מוסף ספציפי וטופס קצר.</td><td><span class="tag b">בק-אופיס</span></td><td><span class="tag y">גבוה · יוני</span></td></tr>
+      <tr><td>תוכנית הפניות</td><td>תמריץ ₪200 ללקוח שמפנה לקוח חדש שסוגר. מודעות לאחר החג הקודם.</td><td><span class="tag b">יקב + בק-אופיס</span></td><td><span class="tag y">בינוני · יוני</span></td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- 8. חלוקת עבודה -->
+<div class="section">
+  <h2><span class="num">8</span>חלוקת עבודה · יקב ↔ בק-אופיס</h2>
+  <p class="lead">עובדים במקביל, לא ברצף. היקב בונה, מייצר, אורז, שולח. בק-אופיס מזרים לידים, מקצר תהליכי מכירה, מודד הכל. הממשק הוא פגישה שבועית של 30 דק׳ ביום א'.</p>
+  <div class="two-col">
+    <div class="box">
+      <h3>יקב · שמחה וצוות המכירות</h3>
+      <ul class="ticks">
+        <li>ייצור ואריזה · קפאסיטי ל-26,000+ מארזים (עלייה של 33%)</li>
+        <li>אישורי כשרות · מתוזמן עד תחילת אוגוסט</li>
+        <li>ניהול מלאי · רזרבות ליינות ומוצרים משלימים</li>
+        <li>סגירת עסקאות גדולות · כל עסקה 500+ מארזים</li>
+        <li>קשר עם לקוחות חוזרים · שיחה אישית לטופ-40</li>
+        <li>לוגיסטיקה ומשלוחים · וודא שלא נפילה בנפח</li>
+      </ul>
+    </div>
+    <div class="box g">
+      <h3>בק-אופיס · פרזי</h3>
+      <ul class="ticks">
+        <li>ניהול קמפיינים · Google Ads, Meta, LinkedIn</li>
+        <li>הפעלת מערכת האוטומציה · 7 השלבים</li>
+        <li>CRM · ניקוי, תיוג, Offline Conversion Import</li>
+        <li>אנליזה שבועית · דאשבורד חי עם KPIs</li>
+        <li>תוכן ויצירה · דפי נחיתה, תסריטים, חומרי שיווק</li>
+        <li>מעקב לידים · תגובה ראשונית תוך שעה</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- 9. גאנט -->
+<div class="section">
+  <h2><span class="num">9</span>גאנט · מה קורה מתי</h2>
+  <p class="lead">23 שבועות מאפריל ועד החג. הצבעים מסמנים את הבעלים. העמודה המסומנת "חג" היא 13 בספטמבר.</p>
+  <div class="legend">
+    <span class="lg-w">יקב · ייצור ואריזה</span>
+    <span class="lg-b">בק-אופיס · דיגיטל</span>
+    <span class="lg-s">משותף</span>
+    <span class="lg-m">מערכת אוטומטית</span>
+    <span class="lg-c">קריטי · Must-hit</span>
+  </div>
+  <div class="gantt" style="margin-top:14px">
+    <table class="gantt-table">
+      <thead>
+        <tr>
+          <th>משימה</th>
+          <th>אפר׳</th><th>מאי 1</th><th>מאי 2</th><th>מאי 3</th><th>מאי 4</th>
+          <th>יוני 1</th><th>יוני 2</th><th>יוני 3</th><th>יוני 4</th>
+          <th>יולי 1</th><th>יולי 2</th><th>יולי 3</th><th>יולי 4</th>
+          <th>אוג׳ 1</th><th>אוג׳ 2</th><th>אוג׳ 3</th><th>אוג׳ 4</th>
+          <th>ספט׳ 1</th><th>ספט׳ 2</th><th style="background:#ff8c00;color:#fff">חג</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>תיוג CRM היסטורי · 221 לקוחות</td><td></td><td><span class="gb b"></span></td><td><span class="gb b"></span></td><td><span class="gb b"></span></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>Offline Conversion Import · הטמעה</td><td></td><td><span class="gb c"></span></td><td><span class="gb c"></span></td><td><span class="gb c"></span></td><td><span class="gb c"></span></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>פגישת קיקאוף יקב + בק-אופיס</td><td><span class="gb s"></span></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>הערכת קפאסיטי ייצור ל-26K מארזים</td><td><span class="gb w"></span></td><td><span class="gb w"></span></td><td><span class="gb w"></span></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>הזמנת חומרי גלם · יין, אריזות, ברכות</td><td></td><td></td><td><span class="gb w"></span></td><td><span class="gb w"></span></td><td><span class="gb w"></span></td><td><span class="gb w"></span></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>כתיבת 3 תסריטי מכירה</td><td></td><td></td><td></td><td><span class="gb s"></span></td><td><span class="gb s"></span></td><td><span class="gb s"></span></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>דף נחיתה HR + טופס</td><td></td><td></td><td></td><td></td><td><span class="gb b"></span></td><td><span class="gb b"></span></td><td><span class="gb b"></span></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>בניית מערכת 7 שלבים · mvp</td><td></td><td></td><td></td><td></td><td></td><td><span class="gb m"></span></td><td><span class="gb m"></span></td><td><span class="gb m"></span></td><td><span class="gb m"></span></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>בניית רשימת ABM · 200 חברות</td><td></td><td></td><td></td><td></td><td></td><td><span class="gb b"></span></td><td><span class="gb b"></span></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>מערכת · פיילוט 30 יום</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td><span class="gb m"></span></td><td><span class="gb m"></span></td><td><span class="gb m"></span></td><td><span class="gb m"></span></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>השקת קמפיין Google Ads · חיפוש</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td><span class="gb b"></span></td><td><span class="gb b"></span></td><td><span class="gb b"></span></td><td><span class="gb b"></span></td><td><span class="gb b"></span></td><td><span class="gb b"></span></td><td><span class="gb b"></span></td><td><span class="gb b"></span></td><td><span class="gb b"></span></td><td><span class="gb b"></span></td><td></td></tr>
+        <tr><td>השקת קמפיין Meta · Lead Form</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td><span class="gb b"></span></td><td><span class="gb b"></span></td><td><span class="gb b"></span></td><td><span class="gb b"></span></td><td><span class="gb b"></span></td><td><span class="gb b"></span></td><td><span class="gb b"></span></td><td><span class="gb b"></span></td><td><span class="gb b"></span></td><td></td></tr>
+        <tr><td>התחלת ייצור שוטף</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td><span class="gb w"></span></td><td><span class="gb w"></span></td><td><span class="gb w"></span></td><td><span class="gb w"></span></td><td><span class="gb w"></span></td><td><span class="gb w"></span></td><td><span class="gb w"></span></td><td></td><td></td></tr>
+        <tr><td>פנייה אישית ל-40 לקוחות טופ</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td><span class="gb w"></span></td><td><span class="gb w"></span></td><td><span class="gb w"></span></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>Scale-up · קמפיינים במלא</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td><span class="gb c"></span></td><td><span class="gb c"></span></td><td><span class="gb c"></span></td><td><span class="gb c"></span></td><td></td><td></td><td></td></tr>
+        <tr><td>LinkedIn ABM · 200 חברות פעילות</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td><span class="gb m"></span></td><td><span class="gb m"></span></td><td><span class="gb m"></span></td><td><span class="gb m"></span></td><td><span class="gb m"></span></td><td></td><td></td></tr>
+        <tr><td>סגירות אחרונות · דחיפה</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td><span class="gb c"></span></td><td><span class="gb c"></span></td><td></td></tr>
+        <tr><td>לוגיסטיקה · משלוח ומסירה</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td><span class="gb w"></span></td><td><span class="gb w"></span></td><td><span class="gb w"></span></td><td><span class="gb c"></span></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="note">גאנט מלא עם תלויות ומעקב שבועי יופיע בגיליון Google Sheets משותף — הלינק בסוף העמוד.</p>
+</div>
+
+<!-- 10. KPIs -->
+<div class="section">
+  <h2><span class="num">10</span>מדדי ביקורת · פגישות שבועיות</h2>
+  <p class="lead">כל יום ראשון, 30 דק', סקירה של המספרים האלה. שלושה אדומים ברצף → פגישת הצלה.</p>
+  <table>
+    <thead>
+      <tr><th>מדד</th><th>יעד שבועי</th><th>אחראי</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>לידים חדשים (מדיה + אוטומציה)</td><td>25+ לידים</td><td><span class="tag b">בק-אופיס</span></td></tr>
+      <tr><td>אחוז תגובה תוך שעה</td><td>90%+</td><td><span class="tag b">יקב + בק-אופיס</span></td></tr>
+      <tr><td>פגישות שנקבעו</td><td>8+ פגישות</td><td><span class="tag b">בק-אופיס</span></td></tr>
+      <tr><td>עסקאות חדשות שנסגרו</td><td>יעד חודשי: 20 יוני · 35 יולי · 60 אוגוסט · 100 ספט׳</td><td><span class="tag b">יקב</span></td></tr>
+      <tr><td>עסקה ממוצעת</td><td>₪7,500+</td><td><span class="tag b">יקב</span></td></tr>
+      <tr><td>החזר על המדיה (שבועי)</td><td>פי 3+ בשבועות הבודדים</td><td><span class="tag b">בק-אופיס</span></td></tr>
+      <tr><td>לקוחות חוזרים שנסגרו</td><td>יעד חודשי: 20 יוני · 35 יולי · 45 אוגוסט · 20 ספט׳</td><td><span class="tag b">יקב</span></td></tr>
+      <tr><td>קפאסיטי ייצור · נשאר</td><td>כל שבוע — מה נשאר לייצר</td><td><span class="tag b">יקב</span></td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- 11. סיכונים -->
+<div class="section">
+  <h2><span class="num">11</span>סיכונים · מה יכול להרוס את זה</h2>
+  <div class="two-col">
+    <div class="box r">
+      <h3>מלחמה · מצב ביטחוני</h3>
+      <p>חג בצל מלחמה פוגע קשה בתקציבי רווחה. מיטיגציה: גיוון ערוצים, דחיית חלק מההוצאה עד אוגוסט, תסריט מתנה "עם תרומה לחיילים" מוכן.</p>
+    </div>
+    <div class="box y">
+      <h3>צוואר בקבוק ייצור</h3>
+      <p>עלייה של 33% בנפח המארזים דורשת הכנה מוקדמת. מיטיגציה: הזמנת חומרי גלם כבר במאי, הרחבת כוח אדם זמני, תיאום עם כשרות באוגוסט.</p>
+    </div>
+    <div class="box y">
+      <h3>איכות נתונים ב-CRM</h3>
+      <p>בלי תיוג נכון של לקוחות — אין Lookalike טוב, אין אטריביושן אמיתי. מיטיגציה: תיוג היסטורי של 221 הלקוחות כבר במאי.</p>
+    </div>
+    <div class="box r">
+      <h3>תלות במדיה בתשלום</h3>
+      <p>ההחזר יורד בסקייל. מיטיגציה: המערכת האוטומטית היא ערוץ מקביל עם תלות נמוכה יותר במדיה, מבוססת על קשר 1-ל-1.</p>
+    </div>
+  </div>
+</div>
+
+<!-- 12. החלטות -->
+<div class="section">
+  <h2><span class="num">12</span>החלטות שצריך עכשיו</h2>
+  <p class="lead">שלוש החלטות שדורשות אישור מההנהלה לפני שאפשר להתחיל. כל אחת חוסמת פעילות אחרת.</p>
+
+  <div class="decision">
+    <h3>החלטה 1 · אישור תקציב מדיה</h3>
+    <p>תקציב מדיה מומלץ: <strong>₪95–120 אלף ש״ח</strong> מיולי עד ספטמבר (פי 4–5 מפסח). פיצול: 65% Google, 25% Meta, 10% LinkedIn לניסוי.</p>
+    <div class="opts">
+      <span>☐ אושר ₪95K</span>
+      <span>☐ אושר ₪120K</span>
+      <span>☐ דורש דיון נוסף</span>
+    </div>
+  </div>
+
+  <div class="decision">
+    <h3>החלטה 2 · פיילוט מערכת הבק-אופיס</h3>
+    <p>אישור להתחיל פיילוט 30 יום בחודש יולי, תקציב בנייה של <strong>₪15–25 אלף ש״ח</strong>, אם הפיילוט מניב לפחות 3 פגישות של midmarket — ממשיכים לסקייל מלא לראש השנה.</p>
+    <div class="opts">
+      <span>☐ אושר · פיילוט ₪15K</span>
+      <span>☐ אושר · פיילוט ₪25K</span>
+      <span>☐ דחייה · נחזור אחרי החג</span>
+    </div>
+  </div>
+
+  <div class="decision">
+    <h3>החלטה 3 · חלוקת אחריות בין היקב לבק-אופיס</h3>
+    <p>אישור של חלוקת העבודה בסעיף 8. פגישה שבועית ביום א' של 30 דק׳, עם מסמך חי של KPIs ופעולות.</p>
+    <div class="opts">
+      <span>☐ אושר כפי שמוצע</span>
+      <span>☐ אושר עם התאמות</span>
+      <span>☐ דורש שיחה נוספת</span>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  מסמך הכנה · יקב טוליפ · אפריל 2026<br>
+  <a href="https://perezofir83.github.io/Tulipdashboard/">לדשבורד הביצועים של פסח 2026 →</a>
+  &nbsp;·&nbsp;
+  <a href="https://docs.google.com/spreadsheets/d/1JKBUKXy2GS6mTh5IzeK-zLTnL-PzFEcN7vjUTI3ib1A/edit#gid=1702217970">גאנט משימות · Google Sheets →</a>
+</div>
+
+</div>
+</body>
+</html>
